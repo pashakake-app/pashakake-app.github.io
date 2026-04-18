@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サポート - パシャ家計簿</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #222;
+    line-height: 1.8;
+  }
+  h1 { font-size: 2em; margin-bottom: 8px; }
+  h2 { margin-top: 32px; font-size: 1.25em; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+  h3 { margin-top: 24px; font-size: 1.05em; color: #333; }
+  ul { padding-left: 1.4em; }
+  a { color: #1D9E75; }
+  nav { margin-bottom: 32px; }
+  nav a { margin-right: 16px; font-size: 0.9em; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th, td { border: 1px solid #eee; padding: 8px 12px; text-align: left; }
+  th { background: #fafafa; }
+  .cta {
+    display: inline-block;
+    background: #1D9E75;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 16px 0;
+  }
+  .cta:hover { opacity: 0.9; }
+  footer { margin-top: 60px; color: #999; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<nav><a href="./index.html">← トップ</a></nav>
+
+<h1>サポート</h1>
+
+<h2>お問い合わせ</h2>
+<p>アプリに関するお問い合わせ、バグ報告、機能要望は以下のフォームよりお受けしています。</p>
+<p><a class="cta" href="https://forms.gle/fq5LrsgrtbHRXku96" target="_blank" rel="noopener">お問い合わせフォーム</a></p>
+<p>できる限り迅速に対応しますが、返信にお時間をいただく場合があります。</p>
+
+<h2>よくある質問</h2>
+
+<h3>Q. 「パシャ家計簿」ってどんなアプリ?</h3>
+<p>決済通知やレシートのスクリーンショットを共有するだけで、AIが自動で支出を記録する家計簿アプリです。手入力はほぼ不要で、面倒な家計管理を最小限の操作で実現します。</p>
+
+<h3>Q. 記録データはどこに保存される?</h3>
+<p>ユーザーの端末内にのみ保存されます。サーバーには送信されません。詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご確認ください。</p>
+
+<h3>Q. 無料プランと Pro プランの違いは?</h3>
+<table>
+  <tr><th></th><th>無料</th><th>Pro</th></tr>
+  <tr><td>月間記録件数</td><td>10件</td><td>無制限</td></tr>
+  <tr><td>基本タイムライン</td><td>✓</td><td>✓</td></tr>
+  <tr><td>月合計表示</td><td>✓</td><td>✓</td></tr>
+  <tr><td>カテゴリ別分析</td><td>-</td><td>✓</td></tr>
+  <tr><td>日別支出推移</td><td>-</td><td>✓</td></tr>
+  <tr><td>よく使う店ランキング</td><td>-</td><td>✓</td></tr>
+  <tr><td>サブスク検出</td><td>-</td><td>✓</td></tr>
+  <tr><td>週間・月間インサイト</td><td>-</td><td>✓</td></tr>
+</table>
+
+<h3>Q. サブスクリプションの解約方法は?</h3>
+<p>iPhone の「設定」アプリ > Apple ID > サブスクリプション から、いつでも解約できます。</p>
+
+<h3>Q. Claude API や ChatGPT API を使うとどうなる?</h3>
+<p>オンデバイスAI(デフォルト)より高精度な解析が可能になります。設定は任意で、使わなくてもアプリは利用できます。APIキーはユーザー自身で Anthropic / OpenAI のサイトから取得する必要があり、利用料金はそれぞれのサービスに直接発生します。</p>
+
+<h3>Q. 撮影した画像はどこに保存される?</h3>
+<p>画像自体は保存されません。OCR で抽出したテキストのみが記録データとして保存されます。</p>
+
+<h2>不具合報告</h2>
+<p>不具合を見つけた場合、以下の情報を添えてご連絡いただけると、解決が早くなります。</p>
+<ul>
+  <li>iOS のバージョン</li>
+  <li>アプリのバージョン(設定画面の下部で確認できます)</li>
+  <li>発生した状況(どの画面で、何をしたか)</li>
+  <li>エラーメッセージがあればその内容</li>
+</ul>
+
+<footer>© 2026 PashaKake</footer>
+</body>
+</html>
