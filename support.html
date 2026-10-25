@@ -1,90 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>サポート - パシャ家計簿</title>
+<meta name="description" content="パシャ家計簿は、決済通知やレシートのスクリーンショットを共有メニューから送るだけで、AIが店名・金額・カテゴリを読み取って支出を記録する家計簿アプリです。">
+<link rel="icon" href="app-icon.png">
 <style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    color: #222;
-    line-height: 1.8;
-  }
-  h1 { font-size: 2em; margin-bottom: 8px; }
-  h2 { margin-top: 32px; font-size: 1.25em; border-bottom: 1px solid #eee; padding-bottom: 6px; }
-  h3 { margin-top: 24px; font-size: 1.05em; color: #333; }
-  ul { padding-left: 1.4em; }
-  a { color: #1D9E75; }
-  nav { margin-bottom: 32px; }
-  nav a { margin-right: 16px; font-size: 0.9em; }
-  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
-  th, td { border: 1px solid #eee; padding: 8px 12px; text-align: left; }
-  th { background: #fafafa; }
-  .cta {
-    display: inline-block;
-    background: #1D9E75;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    margin: 16px 0;
-  }
-  .cta:hover { opacity: 0.9; }
-  footer { margin-top: 60px; color: #999; font-size: 0.9em; }
+:root{
+  --bg:#F6F4EF; --card:#FFFFFF; --ink:#24222B; --sub:#7F7A72; --accent:#188462;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#17161C; --card:#24222D; --ink:#F2EFE8; --sub:#A6A1B0; --accent:#1D9E75; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif;line-height:1.7}
+.wrap{max-width:720px;margin:0 auto;padding:48px 20px}
+.logo{display:flex;align-items:center;gap:14px}
+.logo h1{margin:0;font-size:34px;font-weight:800;line-height:1.3}
+.tagline{color:var(--sub);font-weight:600;margin-top:4px}
+.mark{flex:none;width:56px;height:56px;border-radius:13px}
+.lang-link{margin-top:14px;font-size:14px}
+.card{background:var(--card);border-radius:22px;padding:24px 28px;margin-top:24px;box-shadow:0 3px 12px rgba(40,30,20,.08)}
+h2{font-size:20px;margin:0 0 10px}
+.section-lang{font-size:24px;margin:56px 0 0}
+ul{padding-left:20px;margin:8px 0}
+li+li{margin-top:6px}
+a{color:var(--accent);font-weight:700;word-break:break-all}
+footer{color:var(--sub);font-size:13px;margin-top:40px;text-align:center}
 </style>
 </head>
 <body>
-<nav><a href="./index.html">← トップ</a></nav>
+<div class="wrap">
+  <div class="logo">
+    <img class="mark" src="app-icon.png" width="56" height="56" alt="">
+    <div>
+      <h1>パシャ家計簿</h1>
+      <div class="tagline">スクショを送るだけの家計簿</div>
+    </div>
+  </div>
 
-<h1>サポート</h1>
+  <div class="card">
+    <h2>パシャ家計簿 について</h2>
+    <p>パシャ家計簿は、決済通知やレシートのスクリーンショットを共有メニューから送るだけで、AIが店名・金額・カテゴリを読み取って支出を記録する家計簿アプリです。</p>
+    <ul>
+      <li><strong>共有メニューから記録</strong> — スクリーンショットを撮って共有メニューから「パシャ家計簿」を選ぶだけで記録できます。カメラ撮影や手動入力にも対応しています。</li>
+      <li><strong>オンデバイスAI</strong> — Apple Intelligenceを活用して端末内で解析するので、レシート画像や支出データは端末の外に出ません。</li>
+      <li><strong>タイムラインと予算</strong> — 日別のタイムライン、月合計、月予算の進捗をひと目で確認できます。</li>
+      <li><strong>重複検知とCSV</strong> — 同じ支出の二重記録を防ぎ、記録はCSVで書き出せます。</li>
+    </ul>
+    <p>無料版では月10件まで記録できます。Proプランでは記録が無制限になり、カテゴリ別分析やサブスク検出なども使えます。</p>
+  </div>
 
-<h2>お問い合わせ</h2>
-<p>アプリに関するお問い合わせ、バグ報告、機能要望は以下のフォームよりお受けしています。</p>
-<p><a class="cta" href="https://forms.gle/8BioQuanEe1UUwGk6" target="_blank" rel="noopener">お問い合わせフォーム</a></p>
-<p>できる限り迅速に対応しますが、返信にお時間をいただく場合があります。</p>
+  <div class="card">
+    <h2>サポート</h2>
+    <p>不具合のご報告・ご要望・ご質問は、下記メールアドレスまでお気軽にご連絡ください。</p>
+    <p><a href="mailto:app.info.kn@gmail.com?subject=%E3%83%91%E3%82%B7%E3%83%A3%E5%AE%B6%E8%A8%88%E7%B0%BF%20%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">app.info.kn@gmail.com</a></p>
+    <p>よくある質問:</p>
+    <ul>
+      <li><strong>購入を復元するにはどうすればよいですか？</strong> — 「設定」タブの「プラン」にある「サブスクリプション」を開き、「購入を復元」をタップしてください。同じApple IDでの購入が復元されます。</li>
+      <li><strong>Proプランを解約するには？</strong> — iPhoneの「設定」アプリ →（ユーザー名）→「サブスクリプション」から解約できます。Pro利用中は、「サブスクリプション」画面の「サブスクリプションを管理」からも手続きできます。</li>
+      <li><strong>記録データや画像はどこに保存されますか？</strong> — 記録データはお使いのiPhoneの中にだけ保存され、サーバーには送信されません。画像そのものは保存されず、読み取ったテキストをもとにした記録だけが残ります。</li>
+      <li><strong>Apple Intelligenceに対応していない端末でも使えますか？</strong> — はい、iOS 26以降のiPhoneで使えます。Apple Intelligenceが使えない端末では、端末内の別の読み取り方式で解析します。</li>
+    </ul>
+  </div>
 
-<h2>よくある質問</h2>
+  <div class="card">
+    <h2>プライバシー</h2>
+    <ul>
+      <li><a href="./index.html">パシャ家計簿について</a></li>
+      <li><a href="./privacy.html">プライバシーポリシー</a></li>
+      <li><a href="./terms.html">利用規約</a></li>
+    </ul>
+  </div>
 
-<h3>Q. 「パシャ家計簿」ってどんなアプリ?</h3>
-<p>決済通知やレシートのスクリーンショットを共有するだけで、AIが自動で支出を記録する家計簿アプリです。手入力はほぼ不要で、面倒な家計管理を最小限の操作で実現します。</p>
-
-<h3>Q. 記録データはどこに保存される?</h3>
-<p>ユーザーの端末内にのみ保存されます。サーバーには送信されません。詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご確認ください。</p>
-
-<h3>Q. 無料プランと Pro プランの違いは?</h3>
-<table>
-  <tr><th></th><th>無料</th><th>Pro</th></tr>
-  <tr><td>月間記録件数</td><td>10件</td><td>無制限</td></tr>
-  <tr><td>基本タイムライン</td><td>✓</td><td>✓</td></tr>
-  <tr><td>月合計表示</td><td>✓</td><td>✓</td></tr>
-  <tr><td>カテゴリ別分析</td><td>-</td><td>✓</td></tr>
-  <tr><td>日別支出推移</td><td>-</td><td>✓</td></tr>
-  <tr><td>よく使う店ランキング</td><td>-</td><td>✓</td></tr>
-  <tr><td>サブスク検出</td><td>-</td><td>✓</td></tr>
-  <tr><td>週間・月間インサイト</td><td>-</td><td>✓</td></tr>
-</table>
-
-<h3>Q. サブスクリプションの解約方法は?</h3>
-<p>iPhone の「設定」アプリ > Apple ID > サブスクリプション から、いつでも解約できます。</p>
-
-<h3>Q. 解析はどこで行われる?</h3>
-<p>Apple Intelligence(Foundation Models)を活用したオンデバイスAIによって、端末内で完結します。外部サーバーへの送信はありません。</p>
-
-<h3>Q. 撮影した画像はどこに保存される?</h3>
-<p>画像自体は保存されません。OCR で抽出したテキストのみが記録データとして保存されます。</p>
-
-<h2>不具合報告</h2>
-<p>不具合を見つけた場合、以下の情報を添えてご連絡いただけると、解決が早くなります。</p>
-<ul>
-  <li>iOS のバージョン</li>
-  <li>アプリのバージョン(設定画面の下部で確認できます)</li>
-  <li>発生した状況(どの画面で、何をしたか)</li>
-  <li>エラーメッセージがあればその内容</li>
-</ul>
-
-<footer>© 2026 PashaKake</footer>
+  <footer>© 2026 Koya Nambo — パシャ家計簿</footer>
+</div>
 </body>
 </html>
